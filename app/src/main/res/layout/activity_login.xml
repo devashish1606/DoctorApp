@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:padding="20dp"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/doctorimage"
+            android:layout_gravity="center"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:background="@drawable/roundcorner"
+            android:elevation="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter your Mobile No."
+                android:textSize="16sp"
+                android:paddingLeft="7dp"/>
+
+            <EditText
+                android:id="@+id/mobileno"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:inputType="number"
+                android:textSize="16sp"
+                android:maxLength="10"
+                android:paddingLeft="5dp"
+                android:drawableLeft="@drawable/ic_baseline_phone_android_24"
+                android:background="@drawable/editbackground"
+                android:textColor="@color/black"/>
+
+
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:id="@+id/getOtpButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:background="@drawable/backbutton"
+                    android:backgroundTint="@color/yellow"
+                    android:text="GET OTP"/>
+
+                <ProgressBar
+                    android:id="@+id/progressbar"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:visibility="gone"/>
+
+
+            </FrameLayout>
+            <TextView
+                android:id="@+id/skip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Skip.."
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:gravity="end"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

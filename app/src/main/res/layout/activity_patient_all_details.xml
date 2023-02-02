@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".BookAppointment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="375dp"
+            android:layout_height="131dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/bookappointment" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="15dp"
+            android:elevation="5dp"
+            android:outlineAmbientShadowColor="@color/blue"
+            android:outlineSpotShadowColor="@color/blue"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <EditText
+                    android:id="@+id/personName"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/thineditbackgroud"
+                    android:ems="10"
+                    android:hint="Enter your Fullname"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+                <EditText
+                    android:id="@+id/pPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/thineditbackgroud"
+                    android:ems="10"
+                    android:hint="Enter Your Mobile No."
+                    android:inputType="phone"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.502"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/personName" />
+
+                <EditText
+                    android:id="@+id/page"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/thineditbackgroud"
+                    android:ems="10"
+                    android:hint="Enter your Age"
+                    android:inputType="number"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.502"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/pPhone" />
+
+                <EditText
+                    android:id="@+id/paddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/thineditbackgroud"
+                    android:ems="10"
+                    android:hint="Enter Your Address"
+                    android:inputType="textPostalAddress"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.502"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/page" />
+
+                <EditText
+                    android:id="@+id/gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/thineditbackgroud"
+                    android:ems="10"
+                    android:hint="Enter Your Gender (M/F)"
+                    android:inputType="textPostalAddress"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.502"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/page" />
+
+
+                <EditText
+                    android:id="@+id/appointment_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/thineditbackgroud"
+                    android:ems="10"
+                    android:hint="Choose Appointment Date"
+                    android:inputType="textPostalAddress"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:focusable="false"
+                    android:drawableRight="@drawable/ic_baseline_calendar_today_24"
+                    android:textColor="@color/black"
+                    />
+
+                <DatePicker
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:id="@+id/date_picker"/>
+
+                <EditText
+                    android:id="@+id/describe"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/thineditbackgroud"
+                    android:ems="10"
+                    android:gravity="start"
+                    android:hint="Describe Your Problem...."
+                    android:inputType="textMultiLine"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/paddress" />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:background="@drawable/backbutton"
+            android:text="Submit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+</ScrollView>

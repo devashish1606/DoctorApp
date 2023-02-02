@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Doctor</string>
+
+    <string name="facebook_app_id">[App_ID]</string>
+    <string name="fb_login_protocol_scheme">fb[App_ID]</string>
+
+</resources>

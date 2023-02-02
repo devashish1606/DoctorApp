@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context=".PreviousAppointment">
+
+    <TextView
+        android:id="@+id/recycleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Devashish"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="@color/blue"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/preAppRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</LinearLayout>
+
+
+
